@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>    
+		<!-- Required meta tags -->    
+		<meta charset="utf-8">    
+		<meta name="viewport" content="width=device-width, initial-scale=1">    
+
+		<!-- Bootstrap CSS -->    
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+	 	     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">    
+
+		<!-- My CSS -->
+		<link rel="stylesheet" href="final.css">    
+		<title>Final</title>  
+
+		<!-- JQuery -->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+		<!-- My JS -->
+		<script src="final.js"></script>
+	</head>  
+	<body>    
+		<div class="container-fluid w-75 main-content">
+			<nav>
+				<div class="nav nav-tabs nav-justified" id="nav-tab" role="tablist">
+					<a class="nav-item nav-link active" id="nav-home-tab" href="#nav-home" data-toggle="tab"  
+				      	   role="tab" aria-controls="nav-home" aria-selected="true" >Home</a>
+					<a class="nav-item nav-link" id="nav-directions-tab" href="#nav-directions" data-toggle="tab"  
+				           role="tab" aria-controls="nav-directions" aria-selected="false">Directions</a>
+					<a class="nav-item nav-link" id="nav-search-tab" href="#nav-search" data-toggle="tab"  
+					   role="tab" aria-controls="nav-search" aria-selected="false">Search</a>
+				</div>
+			</nav>
+			<div class="tab-content" id="nav-tabContent">
+				<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="home-tab">
+					<!-- home -->
+					<div class="container-fluid home">
+						<div class="card center">
+							<div class="card-body">
+								<h5 class="card-title">Evan Spensley</h5>
+								<h6 class="card-subtitle mb-2 text-muted">CSE 383</h6>
+								<p class="card-text">Final Project</p>
+								<img src="https://www.pennmedicine.org/-/media/images/miscellaneous/random%20generic%20photos/map_pin_1.ashx?mw=620&mh=408"/ class=".img-fluid map-img">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="nav-directions" role="tabpanel" aria-labelledby="directions-tab">
+					<!-- directions -->
+					<div class="container-fluid directions-content">
+						<img src="https://static.thenounproject.com/png/2760070-200.png" class="img-fluid icon" height=125 width=125>
+						<input class="form-control form-control-lg directions-input" type="text" id="from" placeholder="From" required>
+						<input class="form-control form-control-lg directions-input" type="text" id="to" placeholder="To">
+						<button type="button" class="btn btn-primary directions-input" id="getDirectionsButton">Get Directions</button>
+						<h2 id="directions-error" class="invalid">
+						</h2>
+						<div class="card hidden" id="results">
+							<div class="card-body">
+								<h5 class="card-title">Directions</h5>
+								<ul class="list-group" id="maneuvers">
+									
+								
+								</ul>
+							</div>
+							<div class="card-body" id="elevation">
+								<h5 class="card-title">Elevation</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="nav-search" role="tabpanel" aria-labelledby="search-tab">
+					<!-- search -->
+					<div class="container-fluid content">
+						<img src="https://cdn3.iconfinder.com/data/icons/search-engine-optimization-seo-3/320/loupe_magnifier_magnifying_search-512.png"
+						     class="img-fluid icon" height=75 width=75>
+						<input class="form-control form-control-lg directions-input" type="date" placeholder="Date" id="date">
+						<input class="form-control form-control-lg directions-input" type="number" placeholder="Max Lines" id="max-lines">
+						<button type="button" class="btn btn-primary directions-input" id="searchButton">Search</button>
+						<div class="container-fluid search-table">
+						<table class="table">
+							<thead>
+								<tr>
+									<th scope="col">Directions</th>
+									<th scope="col">Date</th>
+									<th scope="col">Time</th>
+									<th scope="col">From</th>
+									<th scope="col">To</th>
+									<th scope="col">Maneuvers</th>
+								</tr>
+							</thead>
+							<tbody id="results-table">
+							</tbody>
+						</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	</body>
+</html>
+
+
+
