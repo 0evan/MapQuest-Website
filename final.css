@@ -1,0 +1,61 @@
+.invalid {
+	color: #FF7F7F;
+}
+
+.center {
+	margin: auto;
+	width: 70%;
+	text-align: center;
+}
+
+.center-img {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.directions-content {
+	text-align: center;
+}
+
+.content {
+	text-align: center;
+}
+
+.icon {
+	margin: 10px;
+}
+
+.map-img {
+	width: 100%;
+}
+
+.search-table {
+	overflow: auto;
+}
+
+.directions-list-item {
+	overflow: auto;
+}
+
+.home {
+	padding: 10px;
+}
+
+.directions-input {
+	margin: 10px;
+}
+
+.hidden {
+	display: none;
+}
+
+.main-content {
+	background-color: white;
+	padding: 0px;
+	border-radius: 10px;
+}
+
+body {
+	margin: 10px;
+	background-image: url("https://images.pexels.com/photos/87651/earth-blue-planet-globe-planet-87651.jpeg?cs=srgb&dl=pexels-pixabay-87651.jpg&fm=jpg");
+}
